@@ -24,6 +24,10 @@ Route.get('/', async ({ view }) => {
   return view.render('welcome')
 })
 
+Route.get('/bootstrap', async ({ view }) => {
+  return view.render('main_bootstrap')
+})
+
 Route.get('/main', 'PostsController.index')
 Route.get('/database', 'PostsController.database')
 Route.get('/post/:title', 'PostsController.post')
